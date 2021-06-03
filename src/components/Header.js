@@ -1,10 +1,10 @@
 import React from 'react';
-import './Header.css'
+import './Style.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faInfo } from '@fortawesome/free-solid-svg-icons';
 import logo from '../assets/logo.png'
-import bannerPhoto from '../assets/banner-photo.jpeg'
+// import bannerPhoto from '../assets/banner-photo.jpeg'
 
 const Header = () => {
     return (
@@ -14,24 +14,18 @@ const Header = () => {
                     <a className="navbar-brand logo"><img className="h-100" src={logo} alt="logo" /></a>
                     <div className="d-flex">
                         <a className="px-3 text-secondary" href="https://twitter.com/buzz_bingo">
-                            <FontAwesomeIcon className="fa-2x" icon={faTwitter} />
+                            <FontAwesomeIcon className="media-icons" icon={faTwitter} />
                         </a>
                         <a className="px-3 text-secondary" href="https://www.facebook.com/BuzzBingo">
-                            <FontAwesomeIcon className="fa-2x" icon={faFacebookF} />
+                            <FontAwesomeIcon className="media-icons" icon={faFacebookF} />
                         </a>
                         <a className="icons px-3 text-secondary" href="#">
-                            <FontAwesomeIcon className="fa-2x" icon={faInfo} />
+                            <FontAwesomeIcon className="media-icons" icon={faInfo} />
                         </a>
                     </div>
                 </div>
             </nav>
-            <div class="container-fluid banner">
-                <div class="content">
-                    <p>Purly made with HTML & CSS</p>
-                </div>
-                <div class="rotated-block"></div>
-            </div>
-            <section className="d-flex">
+            <section className="skyew">
                 <div className="content">
                     <h1>EURO STICKER PARTY</h1>
                     <p>

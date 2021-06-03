@@ -1,0 +1,100 @@
+/* ------------Header Component------------ */
+.logo{
+    height: 80px;
+}
+.media-icons {
+  width: 22px!important;
+  height: 22px;
+
+}
+section {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 1200px;
+    background-repeat: White;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); */
+    width: 100%;
+    height: 400px;
+    background-color:#062e4a;
+    display: flex;
+}
+
+.content {
+  width: calc(50% - 50px);
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #062e4a;
+  /* padding: 2% 5%;
+  line-height: 1.5rem;
+  font-size: 18px;
+  text-align: justify; */
+  color: #fff;
+}
+.img-container {
+  width: calc(50% + 50px);
+  height: 100%;
+  background-color: rgb(29, 211, 111);
+  border-left: 100px solid #062e4a;
+  border-bottom: 400px solid transparent;
+  background: url('../assets/banner-photo.jpeg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------StickerTable component---------- */
+.text-color {
+  color: red;
+  font-weight: 700;
+}
+.btn-text-color {
+  border: 1px solid red!important;
+  border-radius: 20px!important;
+  font-weight: 700!important;
+}
+.search-input {
+  border: 1px solid red!important;
+  border-radius: 20px!important;
+  width: 400px!important;
+  padding-right: 30px!important;
+  padding-left: 30px!important;
+}
+.search-input::placeholder {
+  color: red!important;
+  text-align: end;
+  font-weight: 700;
+}
+
+tr th{
+  text-align: center;
+  padding: 16px 0!important;
+}
+tr td {
+  text-align: center;
+}
+tr {
+  border-bottom:1px solid red!important;
+}
+tbody > tr:nth-of-type(even) {
+  background-color:#fce6e7;
+}
+
+/* ------- Hardest to complete--------- */
+
+.hardes-to-complete {
+  background-color: #062e4a;
+}
+
