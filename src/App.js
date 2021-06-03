@@ -6,7 +6,7 @@ import StickerTable from './components/StickerTable';
 
 function App() {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid px-0">
       <Header />
       <StickerTable />
       <HardestToComplete />
