@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Style.css'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 const StickerTable = () => {
+
+    const [clickedSticker, setClickedStiker] = useState(true);
+    const [clickedCountry, setClickedCountry] = useState(true);
+    const [clickedCount, setClickedCount] = useState(true);
+    const [clickedRarity, setClickedRarity] = useState(true);
+
+
     return (
-        <div className="container mt-5">
-            <div className="mb-3">
+        <div className="sticker-table container mt-5">
+            <div className="mb-3 d-flex justify-content-end">
                 <input
                     type="text"
-                    className="form-control search-input ms-auto"
+                    className="form-control search-input"
                     id="exampleFormControlInput1"
                     placeholder="Search"
                 />
@@ -16,67 +25,49 @@ const StickerTable = () => {
                 <thead>
                     <tr>
                         <th scope="col">
-                            <div className="dropdown">
-                                <button
-                                    className="btn-text-color btn btn-outline-danger dropdown-toggle px-5"
-                                    type="button" id="dropdownMenuButton3"
-                                    data-bs-toggle="dropdown" aria-expanded="false"
-                                >
-                                    STICKER
-                                </button>
-                                <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a className="dropdown-item" href="#">Another action</a></li>
-                                    <li><a className="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
+                            <button
+                                className="btn-text-color btn btn-outline-danger px-5"
+                                type="button" onClick={() => setClickedStiker(!clickedSticker)}
+                            >
+                                STICKER
+                                 {
+                                    <FontAwesomeIcon className="ms-3" icon={clickedSticker ? faChevronDown : faChevronUp} />
+                                }
+                            </button>
                         </th>
                         <th scope="col">
-                            <div className="dropdown">
-                                <button
-                                    className="btn-text-color btn btn-outline-danger dropdown-toggle px-5"
-                                    type="button" id="dropdownMenuButton3"
-                                    data-bs-toggle="dropdown" aria-expanded="false"
-                                >
-                                    COUNTRY GROUP
-                                </button>
-                                <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a className="dropdown-item" href="#">Action</a></li>
-                                    <li><a className="dropdown-item" href="#">Another action</a></li>
-                                    <li><a className="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
+                            <button
+                                className="btn-text-color btn btn-outline-danger px-5"
+                                type="button" onClick={() =>setClickedCountry(!clickedCountry)}
+                            >
+                                COUNTRY GROUP
+                                {
+                                     <FontAwesomeIcon className="ms-3" icon={clickedCountry ? faChevronDown : faChevronUp} />
+                                }
+
+                            </button>
                         </th>
                         <th scope="col">
-                            <div className="dropdown">
-                                <button
-                                    className="btn-text-color btn btn-outline-danger dropdown-toggle px-5"
-                                    type="button" id="dropdownMenuButton3"
-                                    data-bs-toggle="dropdown" aria-expanded="false"
-                                >
-                                    COUNT
-                                </button>
-                                <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a className="dropdown-item" href="#">Action</a></li>
-                                    <li><a className="dropdown-item" href="#">Another action</a></li>
-                                    <li><a className="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
+                            <button
+                                className="btn-text-color btn btn-outline-danger px-5"
+                                type="button" onClick={() => setClickedCount(!clickedCount)}
+                            >
+                                COUNT
+                                {
+                                    <FontAwesomeIcon className="ms-3" icon={clickedCount ? faChevronDown : faChevronUp} />
+                                }
+                            </button>
                         </th>
                         <th scope="col">
-                            <div className="dropdown">
-                                <button
-                                    className="btn-text-color btn btn-outline-danger dropdown-toggle px-5"
-                                    type="button" id="dropdownMenuButton4"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    RARITY
-                                </button>
-                                <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton4">
-                                    <li><a className="dropdown-item" href="#">Action</a></li>
-                                    <li><a className="dropdown-item" href="#">Another action</a></li>
-                                    <li><a className="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
+                            <button
+                                className="btn-text-color btn btn-outline-danger px-5"
+                                type="button" onClick={() => setClickedRarity(!clickedRarity)}
+                            >
+                                RARITY
+                                {
+                                    <FontAwesomeIcon className="ms-3" icon={clickedRarity ? faChevronDown : faChevronUp} />
+                                }
+                            </button>
                         </th>
                     </tr>
                 </thead>

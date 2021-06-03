@@ -5,7 +5,7 @@ import './Style.css'
 
 const HardestToComplete = () => {
     return (
-        <div className="hardes-to-complete d-flex justify-content-center align-items-center flex-column p-4 my-5">
+        <div className="hardes-to-complete d-flex justify-content-center align-items-center flex-column px-4 py-5 my-5">
             <div>
                 <h1 className= "text-center text-white">Hardest to complete</h1>
                 <div className="align-items-center d-flex flex-column my-5 paragraph text-center text-white">

@@ -9,7 +9,6 @@
 
 }
 section {
-  
     width: 100%;
     height: 400px;
     background-color:#062e4a;
@@ -21,10 +20,6 @@ section {
   height: 100%;
   box-sizing: border-box;
   background-color: #062e4a;
-  /* padding: 2% 5%;
-  line-height: 1.5rem;
-  font-size: 18px;
-  text-align: justify; */
   color: #fff;
 }
 .img-container {
@@ -37,17 +32,6 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* ------------StickerTable component---------- */
 .text-color {
@@ -71,7 +55,14 @@ section {
   text-align: end;
   font-weight: 700;
 }
-
+@media screen and (max-width:768px){
+  .search-input{
+    width: 300px!important;
+  }
+  .sticker-table{
+    overflow-x: scroll;
+  }
+}
 tr th{
   text-align: center;
   padding: 16px 0!important;
@@ -103,3 +94,35 @@ tbody > tr:nth-of-type(even) {
   font-size: 14px;
   width: 65%;
 }
+
+@media screen and (max-width:992px) {
+  .hardes-to-complete  h1 {
+    font-size: 50px;
+  }
+}
+
+/* -------footer----------- */
+
+
+.footer {
+  background: White;
+}
+.footer-header {
+  color: #062e4a;
+  font-size: 70px;
+  font-weight: 600;
+  font-family: 'Baloo Tammudu 2', cursive;
+}
+
+.footer-image {
+  width: 320px;
+}
+.footer-paragraph p {
+  color: #062e4a;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 14px;
+  width: 65%;
+}
+
+
+

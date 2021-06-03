@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './components/Footer';
 import HardestToComplete from './components/HardestToComplete';
 import Header from './components/Header';
 import StickerTable from './components/StickerTable';
@@ -10,7 +11,7 @@ function App() {
       <Header />
       <StickerTable />
       <HardestToComplete />
-      
+      <Footer />
     </div>
   );
 }

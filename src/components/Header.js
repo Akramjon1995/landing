@@ -38,13 +38,12 @@ const Header = () => {
           <div className="content d-flex flex-column">
             <img className="mt-5 ms-5 ms-sm-5 ps-md-5 w-50" src={euroStiker} />
             <p className="text-white mt-5 ms-5 ms-lg-5 ps-lg-5 banner-text">
-              As one of the biggest song competitions in the world, Eurovision
-              has produced iconic songs and artists that we still listen to, to
-              this day.
+                Everyone loves completing the official Panini sticker book every time
+                a major international sporting tournament comes around. 
             </p>
             <p className="text-white mt-5 ms-5 ms-lg-5 ps-lg-5 banner-text">
-              But have you ever wondered which songs and artists are the most
-              popular in the history of Eurovision?
+                And with maths experts claiming you can complete the Euro 2020 sticker book
+                (with a 90% confidence rate) from 993 packs, we bought 1,500 of them to test the theory. 
             </p>
           </div>
           <div className="image-box">
