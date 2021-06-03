@@ -5,7 +5,6 @@ import { faFacebookF, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faInfo } from "@fortawesome/free-solid-svg-icons";
 import logo from "../assets/logo.png";
 import euroStiker from "../assets/euro-sticker-party.png";
-import bannerPhoto from "../assets/banner-photo.jpeg";
 
 const Header = () => {
   return (
