@@ -10,6 +10,7 @@ function App() {
       <Header />
       <StickerTable />
       <HardestToComplete />
+      
     </div>
   );
 }
